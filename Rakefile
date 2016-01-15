@@ -83,7 +83,7 @@ task :dist do
       binding
     end
   end
-  sh("rm -rf #{jailed_root}/usr/share/info/dir")
+  sh("sudo rm -rf #{jailed_root}/usr/share/info/dir")
 
   cd "pkg" do
     sh(%Q{
